@@ -14,6 +14,11 @@ jobs:
           
       - name: Install dependencies
         run: dotnet restore
+
+        - name: Build project
+  run: |
+    cd path/to/your/project
+    dotnet build
         
       - name: Build
         run: dotnet build --configuration Release --no-restore
